@@ -13,7 +13,7 @@ $(document).ready(function () {
     if (movies == null) {
         message = "There are no movies searched."
         movies = [];
-    } else {
+    }
 //    alert("a");
     for (var i = 0; i < movies.length; i++) {
         var movie = movies[i];
@@ -38,7 +38,7 @@ $(document).ready(function () {
 //        localStorage.setItem("persons", JSON.stringify(persons));
 //
 //    });
-    }
+    
 
 });
 
