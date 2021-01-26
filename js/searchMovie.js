@@ -4,7 +4,7 @@ $(document).ready(function () {
         var plot = $("#sYear").val();
         var year = $("#sPlot").val();
         $.ajax({
-            url: "http://www.omdbapi.com/",
+            url: "https://www.omdbapi.com/",
             type: "GET",
             data: "t=" + title + "&y=" + year + "&plot=" + plot + "&apikey=6888a62c",
             dataType: 'jsonp',
