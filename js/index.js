@@ -10,9 +10,8 @@ $(document).ready(function () {
 
     var movies = JSON.parse(localStorage.getItem("reviews"));
     var message = "";
-    if (movies == null) {
-        message = "There are no movies searched."
-        movies = [];
+    if (movies === null) {
+        message += "There are no movies searched.";
     } else {
 //    alert("a");
     for (var i = 0; i < movies.length; i++) {
