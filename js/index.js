@@ -13,15 +13,16 @@ $(document).ready(function () {
     if (movies == null) {
         message = "There are no movies searched."
         movies = [];
-    }
+    } else {
 //    alert("a");
     for (var i = 0; i < movies.length; i++) {
         var movie = movies[i];
-        var title = movie.Title + "<br/>";
-        var plot = movie.Plot + "<br/>";
+        message += "<div class='card'>";
+        message += "<div class='card-header'>";
+        message += movie.Title + "</div><br/>";
+        message += "<div class='card-body'>";
+        message += movie.Plot + "</div><br/></div>";
     }
-    $("#title").html(title);
-    $("#plot").html(plot);
 //        alert("a");
     $("#contents").html(message);
 //    var movie = {};
@@ -39,7 +40,7 @@ $(document).ready(function () {
 //
 //    });
     
-
+    }
 });
 
 
