@@ -21,7 +21,7 @@ $(document).ready(function () {
         message += "<div class='card-header'>";
         message += movie.Title + "</div><br/>";
         message += "<div class='card-body'>";
-        message += movie.Plot + "</div><br/></div>";
+        message += movie.Plot + "</div><br/></div><br/>";
     }
 //        alert("a");
     $("#contents").html(message);
